@@ -6,3 +6,11 @@
 .mb-150 {
     margin-bottom: 150px;
 }
+
+.h-160 {
+    height: 160px;
+}
+
+.active a {
+    font-weight:bold;
+}

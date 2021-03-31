@@ -21,8 +21,19 @@
     </header>
     <div class="container">
         <div class="row mb-3">
-            <div class="col-md-12">
-            </div>
+            @if(!empty($allBeers))
+                @foreach( $allBeers as $allBeer)
+                    <div class="col-md-4">
+                        <div class="mt-4 mb-4">
+                        <h4>{{ $allBeer->name }}</h4>
+                        <p>{{ $allBeer->tagline }}</p>
+                            <div class="p-3">
+                                <img class="img-fluid h-160" src="{{$allBeer->image_url}}" alt="{{ $allBeer->name }}">
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                @endif
         </div>
     </div>
 @endsection

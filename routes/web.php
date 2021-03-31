@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BeersController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,9 +18,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/beers', function () {
-    return view('beers');
-});
+Route::get('/beers', [BeersController::class, 'index']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

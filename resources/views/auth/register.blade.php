@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-    Registrati - Weather app
+    Registrati - Best Beers
 @endsection
 
 @section('content')
