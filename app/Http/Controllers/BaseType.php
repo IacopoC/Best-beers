@@ -25,4 +25,9 @@ class BaseType extends Controller
         return $this->buildCall('beers');
     }
 
+    public function getSingleBeer($id)
+    {
+        return $this->buildCall('beers/' . $id);
+    }
+
 }

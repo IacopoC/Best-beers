@@ -18,4 +18,11 @@ class BeersController extends Controller
         return view('beers', compact( 'allBeers'));
     }
 
+    public function show($id) {
+
+        $singleBeer = $this->basetype->getSingleBeer($id);
+
+        return view('single-beer', compact( 'singleBeer'));
+    }
+
 }

@@ -20,6 +20,8 @@ Route::get('/', function () {
 
 Route::get('/beers', [BeersController::class, 'index']);
 
+Route::get('/single-beer/{id}', [BeersController::class, 'show']);
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');

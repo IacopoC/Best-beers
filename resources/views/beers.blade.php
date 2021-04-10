@@ -23,13 +23,16 @@
         <div class="row mb-3">
             @if(!empty($allBeers))
                 @foreach( $allBeers as $allBeer)
-                    <div class="col-md-4">
-                        <div class="mt-4 mb-4">
-                        <h4>{{ $allBeer->name }}</h4>
-                        <p>{{ $allBeer->tagline }}</p>
-                            <div class="p-3">
-                                <img class="img-fluid h-160" src="{{$allBeer->image_url}}" alt="{{ $allBeer->name }}">
-                            </div>
+                    <div class="col-md-3">
+                        <div class="p-4 m-2 bg-light">
+                            <h4>{{ $allBeer->name }}</h4>
+                            <a href="single-beer/{{ $allBeer->id }}">
+                                <div class="p-3">
+                                    <img class="img-fluid h-160" src="{{$allBeer->image_url}}" alt="{{ $allBeer->name }}">
+                                </div>
+                            </a>
+                            <p>{{ $allBeer->tagline }}</p>
+                            <p>First Brewed: {{ $allBeer->first_brewed }}</p>
                         </div>
                     </div>
                     @endforeach
