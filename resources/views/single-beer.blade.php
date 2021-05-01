@@ -44,6 +44,6 @@
         </div>
     </div>
     <script>
-        let playAudio = function(){document.getElementById("audio").play()}
+        let playAudio = function(){ document.getElementById("audio").play() }
     </script>
 @endsection
