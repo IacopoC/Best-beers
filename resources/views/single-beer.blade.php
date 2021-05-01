@@ -36,7 +36,14 @@
                 @foreach( $singleBeer['0']->food_pairing as $food_suggested)
                     <p><img src="{{ asset('img/food-pairing.png') }}" alt="food-pairing" class="food-pairing-icon p-2">{{ $food_suggested }}</p>
                 @endforeach
+                <button type="button" class="btn btn-warning" onclick="playAudio()">
+                    Pour Beer <img class="play-icon img-fluid" src="{{ asset('img/play-icon.png') }}" alt="play icon">
+                </button>
+                <audio id="audio" src="{{ asset('audio/beer-pouring.mp3') }}"></audio>
             </div>
         </div>
     </div>
+    <script>
+        let playAudio = function(){document.getElementById("audio").play()}
+    </script>
 @endsection
