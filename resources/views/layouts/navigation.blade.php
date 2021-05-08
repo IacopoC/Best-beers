@@ -1,22 +1,22 @@
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-warning fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">Best Beers</a>
+        <a class="navbar-brand" href="{{ url('/') }}">Best Beers Brewdog</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item {{ Request::path() === 'beers' ? 'active': '' }}">
-                    <a class="nav-link" href="{{ url('beers') }}">{{ __('Birre') }}</a>
+                    <a class="nav-link text-white" href="{{ url('beers') }}">{{ __('Birre') }}</a>
                 </li>
                 @guest
                     <li class="nav-item {{ Request::path() === 'login' ? 'active': '' }}">
-                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        <a class="nav-link text-white" href="{{ route('login') }}">{{ __('Login') }}</a>
                     </li>
                     @if (Route::has('register'))
                         <li class="nav-item {{ Request::path() === 'register' ? 'active': '' }}">
-                            <a class="nav-link" href="{{ route('register') }}">{{ __('Registrati') }}</a>
+                            <a class="nav-link text-white" href="{{ route('register') }}">{{ __('Registrati') }}</a>
                         </li>
                     @endif
                 @else
