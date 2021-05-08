@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-    Registrati - Best Beers
+    Register - Best Beers
 @endsection
 
 @section('content')
@@ -9,7 +9,7 @@
         <div class="row justify-content-center">
             <div class="col-md-8 mt-150 mb-150">
                 <div class="card">
-                    <div class="card-header bg-dark text-white">{{ __('Registrati') }}</div>
+                    <div class="card-header bg-dark text-white">{{ __('Register') }}</div>
 
                     <div class="card-body bg-dark">
                         <form method="POST" action="{{ route('register') }}">

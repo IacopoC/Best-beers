@@ -15,19 +15,24 @@ class BaseType extends Controller
         $this->service = new BestBeers();
     }
 
-    private function buildCall($param)
+    private function buildCall($param, $page, $perpage)
+    {
+        return $this->service->callBeers('get', $this->baseUrl . $param . '?page=' . $page . '&per_page=' . $perpage);
+    }
+
+    private function buildSingleCall($param)
     {
         return $this->service->callBeers('get', $this->baseUrl . $param);
     }
 
     public function getDefaultBeers()
     {
-        return $this->buildCall('beers');
+        return $this->buildCall('beers', 1 , 40);
     }
 
     public function getSingleBeer($id)
     {
-        return $this->buildCall('beers/' . $id);
+        return $this->buildSingleCall('beers/' . $id);
     }
 
 }

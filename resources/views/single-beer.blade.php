@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-    Singola Birra - Best Beers
+    {{ $singleBeer['0']->name }} - Best Beers
 @endsection
 
 @section('content')

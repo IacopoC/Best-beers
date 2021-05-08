@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('title')
-    Le Birre - Best Beers
+    Beers - Best Beers
 @endsection
 
 @section('content')
@@ -11,8 +11,8 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-md-7">
-                            <h1 class="display-4 text-white mt-5 mb-2">Le Birre</h1>
-                            <p class="text-white">Qui trovi tutte le birre in archivio</p>
+                            <h1 class="display-4 text-white mt-5 mb-2">Beers</h1>
+                            <p class="text-white">All beers in the archive</p>
                         </div>
                     </div>
                 </div>
