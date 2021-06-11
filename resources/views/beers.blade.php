@@ -38,5 +38,21 @@
                     @endforeach
                 @endif
         </div>
-    </div>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn" id="btn-more-results">Più risultati</button>
+            </div>
+        </div>
+            <div id="more-results" class="row"></div>
+        </div>
+    <script>
+        let moreResults = document.querySelector('.more-results');
+        document.getElementById("btn-more-results").addEventListener("click", function() {
+            fetch('https://api.punkapi.com/v2/beers?page=2&per_page=40')
+                .then(response => response.json())
+                .then(data => data.forEach(function (values) {
+                    document.getElementById("more-results").innerHTML += "<div class=\"col-md-3\"><img class=\" img-fluid beer-image h-160 \" src=" + values.image_url + " alt=" + values.name + "><p>" + values.name + "</p></div>";
+                }))
+        });
+    </script>
 @endsection
