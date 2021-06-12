@@ -40,7 +40,7 @@
         </div>
         <div class="row">
             <div class="col-md-12 pt-4 pb-4">
-                <button type="button" class="btn btn-warning" id="btn-more-results">Altri risultati</button>
+                <button type="button" class="btn btn-warning" id="btn-more-results">More results</button>
             </div>
         </div>
             <div id="more-results" class="row"></div>
