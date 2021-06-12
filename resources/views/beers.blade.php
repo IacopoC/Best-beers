@@ -39,8 +39,8 @@
                 @endif
         </div>
         <div class="row">
-            <div class="col-md-12">
-                <button class="btn" id="btn-more-results">Più risultati</button>
+            <div class="col-md-12 pt-4 pb-4">
+                <button type="button" class="btn btn-warning" id="btn-more-results">Altri risultati</button>
             </div>
         </div>
             <div id="more-results" class="row"></div>
@@ -51,7 +51,7 @@
             fetch('https://api.punkapi.com/v2/beers?page=2&per_page=40')
                 .then(response => response.json())
                 .then(data => data.forEach(function (values) {
-                    document.getElementById("more-results").innerHTML += "<div class=\"col-md-3\"><img class=\" img-fluid beer-image h-160 \" src=" + values.image_url + " alt=" + values.name + "><p>" + values.name + "</p></div>";
+                    document.getElementById("more-results").innerHTML += `<div class=\"col-md-3\"><div class=\"p-4 m-2 bg-light text-center\"><h4>${values.name}</h4> <a href="single-beer/${values.id}"><div class="p-3"><img class=\" img-fluid beer-image h-160 \" src="${values.image_url}" alt="${values.name}"></div></a><p>${values.tagline}</p><p>First Brewed: ${values.first_brewed}</p></div></div>`;
                 }))
         });
     </script>

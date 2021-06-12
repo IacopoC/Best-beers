@@ -187,7 +187,9 @@
       <workItem from="1618508057704" duration="3004000" />
       <workItem from="1619895235036" duration="3223000" />
       <workItem from="1620497606693" duration="3421000" />
-      <workItem from="1623437171537" duration="3688000" />
+      <workItem from="1623437171537" duration="3874000" />
+      <workItem from="1623441199497" duration="26000" />
+      <workItem from="1623523598866" duration="1653000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -252,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620501063140</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="carica più risultati birre js">
+      <created>1623440947545</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1623440947545</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +289,7 @@
     <MESSAGE value="aggiunti dati user in dashboard" />
     <MESSAGE value="aggiornamento versione bootstrap, modifica colore menu" />
     <MESSAGE value="aggiunti parametri birre per pagina, modifiche menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunti parametri birre per pagina, modifiche menu" />
+    <MESSAGE value="carica più risultati birre js" />
+    <option name="LAST_COMMIT_MESSAGE" value="carica più risultati birre js" />
   </component>
 </project>
