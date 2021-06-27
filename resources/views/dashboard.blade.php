@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <h3>Dati utente</h3>
+                <p><strong>Dati utente</strong></p>
                 <p>Nickname: {{ $user->name }}</p>
                 <p>Email: {{ $user->email }}</p>
                 <p>Iscritto dal: {{ date('d M Y', $user->created_at->timestamp) }}</p>
