@@ -24,7 +24,7 @@
             @if(!empty($allBeers))
                 @foreach( $allBeers as $allBeer)
                     <div class="col-md-3">
-                        <div class="p-4 m-2 bg-light text-center">
+                        <div class="p-4 m-2 bg-light text-center rounded-circle">
                             <h4>{{ $allBeer->name }}</h4>
                             <a href="single-beer/{{ $allBeer->id }}">
                                 <div class="p-3">
@@ -47,11 +47,16 @@
         </div>
     <script>
         let moreResults = document.querySelector('.more-results');
-        document.getElementById("btn-more-results").addEventListener("click", function() {
+        let btnResults = document.getElementById("btn-more-results");
+
+        btnResults.addEventListener("click", function() {
+
+            btnResults.classList.add("d-none");
+
             fetch('https://api.punkapi.com/v2/beers?page=2&per_page=40')
                 .then(response => response.json())
                 .then(data => data.forEach(function (values) {
-                    document.getElementById("more-results").innerHTML += `<div class=\"col-md-3\"><div class=\"p-4 m-2 bg-light text-center\"><h4>${values.name}</h4> <a href="single-beer/${values.id}"><div class="p-3"><img class=\" img-fluid beer-image h-160 \" src="${values.image_url}" alt="${values.name}"></div></a><p>${values.tagline}</p><p>First Brewed: ${values.first_brewed}</p></div></div>`;
+                    document.getElementById("more-results").innerHTML += `<div class=\"col-md-3\"><div class=\"p-4 m-2 bg-light text-center rounded-circle\"><h4>${values.name}</h4> <a href="single-beer/${values.id}"><div class="p-3"><img class=\" img-fluid beer-image h-160 \" src="${values.image_url}" alt="${values.name}"></div></a><p>${values.tagline}</p><p>First Brewed: ${values.first_brewed}</p></div></div>`;
                 }))
         });
     </script>
