@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/beers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/beers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/single-beer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/single-beer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +194,8 @@
       <workItem from="1623523598866" duration="2139000" />
       <workItem from="1624785924971" duration="2736000" />
       <workItem from="1624790572981" duration="270000" />
-      <workItem from="1625254790305" duration="1560000" />
+      <workItem from="1625254790305" duration="2071000" />
+      <workItem from="1625425295499" duration="1249000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -285,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624788512016</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="modifiche js elenco birre">
+      <created>1625256398740</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1625256398740</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +327,7 @@
     <MESSAGE value="modifiche script più risultati birre js" />
     <MESSAGE value="modifiche testi home e pagina archivio" />
     <MESSAGE value="aggiunta prima bozza conteggio birre, modifiche testo" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunta prima bozza conteggio birre, modifiche testo" />
+    <MESSAGE value="modifiche js elenco birre" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifiche js elenco birre" />
   </component>
 </project>
