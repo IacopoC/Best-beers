@@ -11,9 +11,9 @@ class BeersController extends Controller
         $this->basetype = $basetype;
     }
 
-    public function index() {
+    public function index($page) {
 
-        $allBeers = $this->basetype->getDefaultBeers();
+        $allBeers = $this->basetype->getDefaultBeers($page);
 
         return view('beers', compact( 'allBeers'));
     }

@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/single-beer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/single-beer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BaseType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BaseType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BeersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BeersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/beers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/beers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +197,8 @@
       <workItem from="1624785924971" duration="2736000" />
       <workItem from="1624790572981" duration="270000" />
       <workItem from="1625254790305" duration="2071000" />
-      <workItem from="1625425295499" duration="1249000" />
+      <workItem from="1625425295499" duration="1390000" />
+      <workItem from="1625920684328" duration="1546000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -295,7 +298,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625256398740</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="modifiche stile pagina login register e auth">
+      <created>1625426588529</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1625426588529</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,6 +338,7 @@
     <MESSAGE value="modifiche testi home e pagina archivio" />
     <MESSAGE value="aggiunta prima bozza conteggio birre, modifiche testo" />
     <MESSAGE value="modifiche js elenco birre" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifiche js elenco birre" />
+    <MESSAGE value="modifiche stile pagina login register e auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifiche stile pagina login register e auth" />
   </component>
 </project>

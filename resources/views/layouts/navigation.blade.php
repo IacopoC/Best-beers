@@ -8,7 +8,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item {{ Request::path() === 'beers' ? 'active': '' }}">
-                    <a class="nav-link text-white" href="{{ url('beers') }}">{{ __('Beers') }}</a>
+                    <a class="nav-link text-white" href="{{ url('beers/1') }}">{{ __('Beers') }}</a>
                 </li>
                 @guest
                     <li class="nav-item {{ Request::path() === 'login' ? 'active': '' }}">

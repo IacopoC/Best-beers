@@ -19,7 +19,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/beers', [BeersController::class, 'index']);
+Route::get('/beers/{page}', [BeersController::class, 'index']);
 
 Route::get('/single-beer/{id}', [BeersController::class, 'show']);
 

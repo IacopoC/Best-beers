@@ -8,7 +8,7 @@
     <header class="py-5 mb-5 bg-warning">
         <div class="container h-100">
             <div class="row h-100 align-items-center">
-                <div class="col-lg-12">
+                <div class="col-md-12">
                     <div class="row">
                         <div class="col-md-7">
                             <h1 class="display-4 text-white mt-5 mb-2">Beers</h1>
@@ -24,7 +24,7 @@
             @if(!empty($allBeers))
                 @foreach( $allBeers as $allBeer)
                     <div class="col-md-3">
-                        <div class="p-4 m-2 bg-light text-center rounded-circle">
+                        <div class="p-4 m-2 text-center">
                             <h4>{{ $allBeer->name }}</h4>
                             <a href="single-beer/{{ $allBeer->id }}">
                                 <div class="p-3">
@@ -39,25 +39,19 @@
                 @endif
         </div>
         <div class="row">
-            <div class="col-md-12 pt-4 pb-4">
-                <button type="button" class="btn btn-warning" id="btn-more-results">More results</button>
+            <div class="col-md-12">
+        <nav aria-label="page navigation">
+            <ul class="pagination">
+                <li class="page-item {{ Request::path() === 'beers/1' ? 'active': '' }}"><a class="page-link" href="{{ url('beers/1') }}">1</a></li>
+                <li class="page-item {{ Request::path() === 'beers/2' ? 'active': '' }}"><a class="page-link" href="{{ url('beers/2') }}">2</a></li>
+                <li class="page-item {{ Request::path() === 'beers/3' ? 'active': '' }}"><a class="page-link" href="{{ url('beers/3') }}">3</a></li>
+                <li class="page-item {{ Request::path() === 'beers/4' ? 'active': '' }}"><a class="page-link" href="{{ url('beers/4') }}">4</a></li>
+                <li class="page-item {{ Request::path() === 'beers/5' ? 'active': '' }}"><a class="page-link" href="{{ url('beers/5') }}">5</a></li>
+                <li class="page-item {{ Request::path() === 'beers/6' ? 'active': '' }}"><a class="page-link" href="{{ url('beers/6') }}">6</a></li>
+            </ul>
+        </nav>
             </div>
         </div>
-            <div id="more-results" class="row"></div>
         </div>
-    <script>
-        let moreResults = document.querySelector('.more-results');
-        let btnResults = document.getElementById("btn-more-results");
 
-        btnResults.addEventListener("click", function() {
-
-            btnResults.classList.add("d-none");
-
-            fetch('https://api.punkapi.com/v2/beers?page=2&per_page=40')
-                .then(response => response.json())
-                .then(data => data.forEach(function (values) {
-                    document.getElementById("more-results").innerHTML += `<div class=\"col-md-3\"><div class=\"p-4 m-2 bg-light text-center rounded-circle\"><h4>${values.name}</h4> <a href="single-beer/${values.id}"><div class="p-3"><img class=\" img-fluid beer-image h-160 \" src="${values.image_url}" alt="${values.name}"></div></a><p>${values.tagline}</p><p>First Brewed: ${values.first_brewed}</p></div></div>`;
-                }))
-        });
-    </script>
 @endsection

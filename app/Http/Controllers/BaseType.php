@@ -25,9 +25,9 @@ class BaseType extends Controller
         return $this->service->callBeers('get', $this->baseUrl . $param);
     }
 
-    public function getDefaultBeers()
+    public function getDefaultBeers($page)
     {
-        return $this->buildCall('beers', 1 , 40);
+        return $this->buildCall('beers', $page , 40);
     }
 
     public function getSingleBeer($id)
