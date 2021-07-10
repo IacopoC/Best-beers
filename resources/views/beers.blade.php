@@ -26,7 +26,7 @@
                     <div class="col-md-3">
                         <div class="p-4 m-2 text-center">
                             <h4>{{ $allBeer->name }}</h4>
-                            <a href="single-beer/{{ $allBeer->id }}">
+                            <a href="{{ url('single-beer/' . $allBeer->id) }}">
                                 <div class="p-3">
                                     <img class="img-fluid beer-image h-160" src="{{$allBeer->image_url}}" alt="{{ $allBeer->name }}">
                                 </div>
@@ -41,7 +41,7 @@
         <div class="row">
             <div class="col-md-12">
         <nav aria-label="page navigation">
-            <ul class="pagination">
+            <ul class="pagination justify-content-center">
                 <li class="page-item {{ Request::path() === 'beers/1' ? 'active': '' }}"><a class="page-link" href="{{ url('beers/1') }}">1</a></li>
                 <li class="page-item {{ Request::path() === 'beers/2' ? 'active': '' }}"><a class="page-link" href="{{ url('beers/2') }}">2</a></li>
                 <li class="page-item {{ Request::path() === 'beers/3' ? 'active': '' }}"><a class="page-link" href="{{ url('beers/3') }}">3</a></li>

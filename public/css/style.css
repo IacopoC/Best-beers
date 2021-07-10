@@ -11,6 +11,15 @@
     height: 160px;
 }
 
+.page-link {
+    color: #000;
+}
+
+.page-item.active .page-link {
+    background-color: orange !important;
+    border-color: orange !important;
+}
+
 .active a {
     font-weight:bold;
 }
