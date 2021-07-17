@@ -25,4 +25,6 @@ Route::get('/single-beer/{id}', [BeersController::class, 'show']);
 
 Route::get('/dashboard', [UserController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
+Route::post('/dashboard', [UserController::class, 'update']);
+
 require __DIR__.'/auth.php';

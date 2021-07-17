@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Utilities/Country.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2021_07_17_191909_add_users_location_data.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/beers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/beers.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +200,9 @@
       <workItem from="1625425295499" duration="1390000" />
       <workItem from="1625920684328" duration="1928000" />
       <workItem from="1625922804870" duration="271000" />
-      <workItem from="1625945974170" duration="1998000" />
+      <workItem from="1625945974170" duration="2167000" />
+      <workItem from="1625948406656" duration="94000" />
+      <workItem from="1626549337157" duration="2389000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -311,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625922298063</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="correzione link, modifica paginazione, stile">
+      <created>1625948036563</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1625948036563</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +358,7 @@
     <MESSAGE value="modifiche js elenco birre" />
     <MESSAGE value="modifiche stile pagina login register e auth" />
     <MESSAGE value="modifiche paginazione beers" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifiche paginazione beers" />
+    <MESSAGE value="correzione link, modifica paginazione, stile" />
+    <option name="LAST_COMMIT_MESSAGE" value="correzione link, modifica paginazione, stile" />
   </component>
 </project>

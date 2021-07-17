@@ -1,3 +1,4 @@
+@inject('countries', 'App\Http\Utilities\Country')
 @extends('layout')
 
 @section('title')
@@ -26,6 +27,102 @@
                 <p>Email: {{ $user->email }}</p>
                 <p>Iscritto dal: {{ date('d M Y', $user->created_at->timestamp) }}</p>
             </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                @if(!empty($user->address))
+                    <p class="pt-4"><strong>Indirizzo</strong></p>
+                    <p>{{ $user->address }}
+                        @endif
+                        @if(!empty($user->zip))
+                            {{ $user->zip }}</p>
+                @endif
+                @if(!empty($user->hometown))
+                    <p>{{ $user->hometown }}
+                        @endif
+                        @if(!empty($user->province))
+                            {{ $user->province }} @endif
+                            @if(!empty($user->country))
+                              - {{ $user->country }}
+                            @endif
+                    </p>
+            </div>
+            <div class="col-md-12 pt-4 pb-4">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Modifica profilo
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal user -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog mw-100 w-75">
+            <div class="modal-content">
+                <div class="modal-header card-header-title">
+                    <h4 class="modal-title card-element-title">Aggiungi informazioni profilo</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" method="POST">
+                        {{ csrf_field() }}
+
+                        <div class="form-group pt-4">
+                            <label for="address" class="col-md-4 control-label-p">Indirizzo</label>
+                            <div class="col-md-9">
+                                <input id="address" type="text" class="form-control" name="address" value="@if(!empty($user->address)){{ $user->address }} @endif">
+                            </div>
+                        </div>
+                        <div class="form-group pt-4">
+                            <label for="zip" class="col-md-6 control-label-p">CAP</label>
+                            <div class="col-md-9">
+                                <input id="zip" type="text" class="form-control" name="zip" value="@if(!empty($user->zip)){{ $user->zip }} @endif">
+                            </div>
+                        </div>
+                        <div class="form-group pt-4">
+                            <label for="province" class="col-md-6 control-label-p">Provincia</label>
+                            <div class="col-md-9">
+                                <input id="province" type="text" class="form-control" name="province" value="@if(!empty($user->province)){{ $user->province }} @endif">
+                            </div>
+                        </div>
+                        <div class="form-group pt-4">
+                            <label for="hometown" class="col-md-4 control-label-p">Città</label>
+
+                            <div class="col-md-9">
+                                <div class="input-group">
+                                    <span class="input-group-addon" id="basic-addon3"></span>
+                                    <input id="hometown" type="text" class="form-control" name="hometown" value="@if(!empty($user->hometown)){{ $user->hometown }} @endif" autofocus>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group pt-4 pb-4">
+                            <label for="country" class="col-md-4 control-label-p">Stato</label>
+
+                            <div class="col-md-9">
+                                <select id="country" class="form-control form-select" aria-label="Default select" name="country">
+
+                                    <!--See blade inject for Country class-->
+                                    <?php $code=''; ?>
+                                    @foreach( $countries::all() as $country => $code)
+                                        <option <?php if (isset($user->country) && $user->country == $code): echo "selected"; endif;?> value="{{ $code }}">{{ $country }}</option>
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-9 col-md-offset-2">
+                                <button type="submit" class="btn btn-warning">
+                                    Aggiorna profilo
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
         </div>
     </div>
 @endsection
