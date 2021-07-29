@@ -13,6 +13,7 @@
                         <div class="col-md-7">
                             <h1 class="display-4 text-white mt-5 mb-2">Beers</h1>
                             <p class="text-white">All beers in the archive</p>
+                            <p class="text-white"><a class="text-white" href="{{ url('/') }}">Home</a> / Beers</p>
                         </div>
                     </div>
                 </div>

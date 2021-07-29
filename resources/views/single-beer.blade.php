@@ -13,6 +13,7 @@
                         <div class="col-md-7">
                             <h1 class="display-4 text-white mt-5 mb-2">{{ $singleBeer['0']->name }}</h1>
                             <p class="text-white">First brewed: {{ $singleBeer['0']->first_brewed }}</p>
+                            <p class="text-white"><a class="text-white" href="{{ url('/') }}">Home</a> / <a class="text-white" href="{{ url('/beers/1') }}">Beers</a> / {{ $singleBeer['0']->name }}</p>
                         </div>
                     </div>
                 </div>
@@ -41,7 +42,7 @@
                 <button type="button" class="btn btn-warning" id="pourBeer">
                     Pour Beer <img class="play-icon img-fluid" src="{{ asset('img/play-icon.png') }}" alt="play icon">
                 </button>
-                    <p class="pt-4">Numbers of times you pour this beer: <span id="displayCount">0</span></p>
+                    <p class="pt-4">Numbers of times you pour this beer: <span id="displayCount"><strong>0</strong></span></p>
                 <audio id="audio" src="{{ asset('audio/beer-pouring.mp3') }}"></audio>
                     @endauth
             </div>

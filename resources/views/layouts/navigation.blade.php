@@ -7,7 +7,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item {{ Request::path() === 'beers' ? 'active': '' }}">
+                <li class="nav-item">
                     <a class="nav-link text-white" href="{{ url('beers/1') }}">{{ __('Beers') }}</a>
                 </li>
                 @guest
@@ -20,11 +20,11 @@
                         </li>
                     @endif
                 @else
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('dashboard') }}">{{ Auth::user()->name }}</a>
+                    <li class="nav-item {{ Request::path() === 'dashboard' ? 'active': '' }}">
+                        <a class="nav-link text-white" href="{{ route('dashboard') }}">{{ Auth::user()->name }}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
+                        <a class="nav-link text-white" href="{{ route('logout') }}" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
                             {{ __('Logout') }} </a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

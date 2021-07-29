@@ -70,7 +70,7 @@
                                 </div>
                             </div>
                         </form>
-                        <p class="text-white">User: regio@regio.it</p>
+                        <p class="text-white">User: iacopo.cutino@gmail.com</p>
                         <p class="text-white">Pass: ciaociao1</p>
                     </div>
                 </div>
