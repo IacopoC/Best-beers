@@ -38,12 +38,16 @@
                     <p><img src="{{ asset('img/food-pairing.png') }}" alt="food-pairing" class="food-pairing-icon p-2">{{ $food_suggested }}</p>
                 @endforeach
                 @auth
+                    <hr>
                     <p><strong>Try the beer</strong></p>
                 <button type="button" class="btn btn-warning" id="pourBeer">
                     Pour Beer <img class="play-icon img-fluid" src="{{ asset('img/play-icon.png') }}" alt="play icon">
                 </button>
-                    <p class="pt-4">Numbers of times you pour this beer: <span id="displayCount"><strong>0</strong></span></p>
+                    <p class="pt-4 pb-2">Numbers of times you pour this beer: <span id="displayCount"><strong>0</strong></span></p>
                 <audio id="audio" src="{{ asset('audio/beer-pouring.mp3') }}"></audio>
+                    <button type="button" class="btn btn-warning" id="saveBeer">
+                        Save Beer <img class="play-icon img-fluid" src="{{ asset('img/save.png') }}" alt="save icon">
+                    </button>
                     @endauth
             </div>
         </div>

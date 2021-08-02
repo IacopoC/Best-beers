@@ -4,8 +4,7 @@
     <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/beers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/beers.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/single-beer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/single-beer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +201,8 @@
       <workItem from="1625945974170" duration="2167000" />
       <workItem from="1625948406656" duration="94000" />
       <workItem from="1626549337157" duration="2685000" />
-      <workItem from="1627547037701" duration="2006000" />
+      <workItem from="1627547037701" duration="2316000" />
+      <workItem from="1627932628922" duration="1521000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -330,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1626551821995</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="modifiche navigazione, aggiunta breadcrumbs">
+      <created>1627549177736</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1627549177736</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,6 +374,7 @@
     <MESSAGE value="modifiche paginazione beers" />
     <MESSAGE value="correzione link, modifica paginazione, stile" />
     <MESSAGE value="aggiunta location data user, controller, form e model" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunta location data user, controller, form e model" />
+    <MESSAGE value="modifiche navigazione, aggiunta breadcrumbs" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifiche navigazione, aggiunta breadcrumbs" />
   </component>
 </project>
