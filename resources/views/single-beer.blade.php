@@ -39,7 +39,7 @@
                 @endforeach
                 @auth
                     <hr>
-                    <p><strong>Try the beer</strong></p>
+                    <h3 class="pb-3"><strong>Try the beer</strong></h3>
                 <button type="button" class="btn btn-warning" id="pourBeer">
                     Pour Beer <img class="play-icon img-fluid" src="{{ asset('img/play-icon.png') }}" alt="play icon">
                 </button>

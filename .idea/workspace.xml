@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="aggiunti assets, modifiche stile login e register">
+    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/single-beer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/single-beer.blade.php" afterDir="false" />
@@ -203,7 +203,7 @@
       <workItem from="1627547037701" duration="2316000" />
       <workItem from="1627932628922" duration="2002000" />
       <workItem from="1628275106526" duration="271000" />
-      <workItem from="1628446395292" duration="1901000" />
+      <workItem from="1628446395292" duration="2104000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -345,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1627934369248</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="aggiunto js single beers">
+      <created>1628448411534</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1628448411534</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -384,6 +391,7 @@
     <MESSAGE value="aggiunta location data user, controller, form e model" />
     <MESSAGE value="modifiche navigazione, aggiunta breadcrumbs" />
     <MESSAGE value="aggiunti assets, modifiche stile login e register" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunti assets, modifiche stile login e register" />
+    <MESSAGE value="aggiunto js single beers" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunto js single beers" />
   </component>
 </project>
