@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/single-beer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/single-beer.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -203,7 +199,7 @@
       <workItem from="1627547037701" duration="2316000" />
       <workItem from="1627932628922" duration="2002000" />
       <workItem from="1628275106526" duration="271000" />
-      <workItem from="1628446395292" duration="2104000" />
+      <workItem from="1628446395292" duration="2408000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -352,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628448411534</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="correzione font">
+      <created>1628448620876</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1628448620876</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,6 +395,7 @@
     <MESSAGE value="modifiche navigazione, aggiunta breadcrumbs" />
     <MESSAGE value="aggiunti assets, modifiche stile login e register" />
     <MESSAGE value="aggiunto js single beers" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunto js single beers" />
+    <MESSAGE value="correzione font" />
+    <option name="LAST_COMMIT_MESSAGE" value="correzione font" />
   </component>
 </project>
