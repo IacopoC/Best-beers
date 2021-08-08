@@ -43,7 +43,8 @@
                 <button type="button" class="btn btn-warning" id="pourBeer">
                     Pour Beer <img class="play-icon img-fluid" src="{{ asset('img/play-icon.png') }}" alt="play icon">
                 </button>
-                    <p class="pt-4 pb-2">Numbers of times you pour this beer: <span id="displayCount"><strong>0</strong></span></p>
+                    <p class="beerCounter pt-4 pb-2">Numbers of times you pour this beer: <span id="displayCount">0</span></p>
+                    <p id="displayDrunk"></p>
                 <audio id="audio" src="{{ asset('audio/beer-pouring.mp3') }}"></audio>
                     <button type="button" class="btn btn-warning" id="saveBeer">
                         Save Beer <img class="play-icon img-fluid" src="{{ asset('img/save.png') }}" alt="save icon">
@@ -57,11 +58,21 @@
         let count = 0;
         let pourButton = document.getElementById("pourBeer");
         let displayCount = document.getElementById("displayCount");
+        let displayDrunk = document.getElementById("displayDrunk");
 
         pourButton.addEventListener("click", function() {
             count ++;
             displayCount.innerHTML = count;
-            document.getElementById("audio").play();
+
+            if(count >= 4) {
+                displayDrunk.innerHTML = 'drunk, ahah!';
+                displayDrunk.classList.remove("sober");
+                displayDrunk.classList.add("drunk");
+                document.getElementById("audio").play();
+            } else {
+                displayDrunk.innerHTML = 'sober, good Job!';
+                displayDrunk.classList.add("sober");
+            }
         });
 
     </script>
