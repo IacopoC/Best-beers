@@ -45,7 +45,8 @@
                 </button>
                     <p class="beerCounter pt-4 pb-2">Numbers of times you pour this beer: <span id="displayCount">0</span></p>
                     <p id="displayDrunk"></p>
-                <audio id="audio" src="{{ asset('audio/beer-pouring.mp3') }}"></audio>
+                <audio id="pouring-audio" src="{{ asset('audio/beer-pouring.mp3') }}"></audio>
+                    <audio id="hiccup-audio" src="{{ asset('audio/hiccup.mp3') }}"></audio>
                     <button type="button" class="btn btn-warning" id="saveBeer">
                         Save Beer <img class="play-icon img-fluid" src="{{ asset('img/save.png') }}" alt="save icon">
                     </button>
@@ -64,14 +65,17 @@
             count ++;
             displayCount.innerHTML = count;
 
-            if(count >= 4) {
+            if(count === 6) {
+                document.getElementById("hiccup-audio").play();
+            }
+            if(count >= 6) {
                 displayDrunk.innerHTML = 'drunk, ahah!';
                 displayDrunk.classList.remove("sober");
                 displayDrunk.classList.add("drunk");
-                document.getElementById("audio").play();
             } else {
                 displayDrunk.innerHTML = 'sober, good Job!';
                 displayDrunk.classList.add("sober");
+                document.getElementById("pouring-audio").play();
             }
         });
 
