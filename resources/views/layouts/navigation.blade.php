@@ -7,7 +7,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
+                <li class="nav-item @if(str_contains(Request::path(), 'beers'))  {{'active'}} @else {{ '' }} @endif">
                     <a class="nav-link text-white" href="{{ url('beers/1') }}">{{ __('Beers') }}</a>
                 </li>
                 @guest
