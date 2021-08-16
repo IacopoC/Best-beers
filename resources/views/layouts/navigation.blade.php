@@ -26,7 +26,7 @@
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{{ route('logout') }}" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
-                            {{ __('Logout') }} </a>
+                            {{ __('Logout') }} <img class="play-icon img-fluid p-1" src="{{ asset('img/logout.png') }}" alt="logout icon"></a>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
