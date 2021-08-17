@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BeersController;
+use App\Http\Controllers\BeerscountController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -26,5 +27,7 @@ Route::get('/single-beer/{id}', [BeersController::class, 'show']);
 Route::get('/dashboard', [UserController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
 Route::post('/dashboard', [UserController::class, 'update']);
+
+Route::post('/single-beer/{id}', [BeerscountController::class, 'create']);
 
 require __DIR__.'/auth.php';

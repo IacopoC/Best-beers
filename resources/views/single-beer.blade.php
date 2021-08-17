@@ -43,13 +43,21 @@
                 <button type="button" class="btn btn-warning" id="pourBeer">
                     Pour Beer <img class="play-icon img-fluid" src="{{ asset('img/play-icon.png') }}" alt="play icon">
                 </button>
+                    <form id="savebeer" method="post">
+                        {{ csrf_field() }}
+                        <input type="hidden" name="name" id="beer-name" value="{{ $singleBeer['0']->name }}">
+                        <input type="hidden" name="tagline" id="beer-tagline" value="{{ $singleBeer['0']->tagline }}">
+                        <input type="hidden" name="count_drink" id="beer-count" value="0">
+                        <input type="hidden" name="drunk" id="beer-drunk" value="sober, good Job!">
+                        <input type="hidden" name="users_id" id="user-id" value="{{ Auth::user()->id }}">
                     <p class="beerCounter pt-4 pb-2">Numbers of times you pour this beer: <span id="displayCount">0</span></p>
                     <p id="displayDrunk" class="sober">sober, good Job!</p>
-                <audio id="pouring-audio" src="{{ asset('audio/beer-pouring.mp3') }}"></audio>
-                    <audio id="hiccup-audio" src="{{ asset('audio/hiccup.mp3') }}"></audio>
-                    <button type="button" class="btn btn-warning" id="saveBeer">
+                    <button type="submit" class="btn btn-warning" id="saveBeer">
                         Save Beer <img class="play-icon img-fluid" src="{{ asset('img/save.png') }}" alt="save icon">
                     </button>
+                    </form>
+                    <audio id="pouring-audio" src="{{ asset('audio/beer-pouring.mp3') }}"></audio>
+                    <audio id="hiccup-audio" src="{{ asset('audio/hiccup.mp3') }}"></audio>
                     @endauth
             </div>
         </div>
@@ -60,18 +68,21 @@
         let pourButton = document.getElementById("pourBeer");
         let displayCount = document.getElementById("displayCount");
         let displayDrunk = document.getElementById("displayDrunk");
+        let drunkMessage = 'drunk, ahah!';
 
         pourButton.addEventListener("click", function() {
             count ++;
             displayCount.innerHTML = count;
+            document.getElementById("beer-count").value = count;
 
             if(count === 6) {
                 document.getElementById("hiccup-audio").play();
             }
             if(count >= 6) {
-                displayDrunk.innerHTML = 'drunk, ahah!';
+                displayDrunk.innerHTML = drunkMessage;
                 displayDrunk.classList.remove("sober");
                 displayDrunk.classList.add("drunk");
+                document.getElementById("beer-drunk").value = drunkMessage;
             } else {
                 document.getElementById("pouring-audio").play();
             }
