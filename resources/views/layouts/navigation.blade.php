@@ -1,12 +1,12 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-warning fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">Best Beers Brewdog</a>
+        <a class="navbar-brand" href="{{ url('/') }}"><h2>BeSt BeErS BrEwDoG</h2></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item @if(str_contains(Request::path(), 'beers'))  {{'active'}} @else {{ '' }} @endif">
                     <a class="nav-link text-white" href="{{ url('beers/1') }}">{{ __('Beers') }}</a>
                 </li>
