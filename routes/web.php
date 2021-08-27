@@ -26,6 +26,8 @@ Route::get('/single-beer/{id}', [BeersController::class, 'show']);
 
 Route::get('/dashboard', [UserController::class, 'index'])->middleware(['auth'])->name('dashboard');
 
+Route::get('/your-beer', [UserController::class, 'show'])->middleware(['auth'])->name('your-beer');
+
 Route::post('/dashboard', [UserController::class, 'update']);
 
 Route::post('/single-beer/{id}', [BeerscountController::class, 'create']);

@@ -23,6 +23,9 @@
                     <li class="nav-item {{ Request::path() === 'dashboard' ? 'active': '' }}">
                         <a class="nav-link text-white" href="{{ route('dashboard') }}">{{ Auth::user()->name }}</a>
                     </li>
+                    <li class="nav-item {{ Request::path() === 'your-beer' ? 'active': '' }}">
+                        <a class="nav-link text-white" href="{{ route('your-beer') }}">Your Beers</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="{{ route('logout') }}" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
