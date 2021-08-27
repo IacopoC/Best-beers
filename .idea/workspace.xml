@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/your-beer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/your-beer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/your-beer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +221,7 @@
       <workItem from="1629203541414" duration="3437000" />
       <workItem from="1629745719405" duration="2076000" />
       <workItem from="1629748022748" duration="62000" />
-      <workItem from="1630089248518" duration="2331000" />
+      <workItem from="1630089248518" duration="2562000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -430,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629747502389</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="aggiunta pagina your beers, aggiunto metodo, stile">
+      <created>1630091706710</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1630091706710</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -449,7 +452,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modifica vista birre singole" />
     <MESSAGE value="aggiunto effetto audio vista singole birre" />
     <MESSAGE value="aggiunti dati user in dashboard" />
     <MESSAGE value="aggiornamento versione bootstrap, modifica colore menu" />
@@ -474,6 +476,7 @@
     <MESSAGE value="aggiunta icona logout" />
     <MESSAGE value="salvataggio birre, aggiunta immagine e rotta" />
     <MESSAGE value="modifica menu, modifica bottone beers" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifica menu, modifica bottone beers" />
+    <MESSAGE value="aggiunta pagina your beers, aggiunto metodo, stile" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunta pagina your beers, aggiunto metodo, stile" />
   </component>
 </project>
