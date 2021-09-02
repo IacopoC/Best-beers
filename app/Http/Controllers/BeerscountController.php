@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Beer;
+use Illuminate\Support\Facades\Auth;
 
 class BeerscountController extends Controller
 {
@@ -24,5 +25,15 @@ class BeerscountController extends Controller
 
         return view('saved-beer');
 
+    }
+
+    public function show() {
+        if (Auth::check()) {
+
+            $id = Auth::user()->id;
+            $yourBeers = Beer::where('users_id', $id)->orderBy('created_at', 'desc')->get();
+
+            return view('your-beer', array('yourBeers' => $yourBeers, 'user' => Auth::user()));
+        }
     }
 }

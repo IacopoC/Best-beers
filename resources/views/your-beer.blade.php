@@ -22,7 +22,7 @@
     <div class="container">
         <div class="row mb-3">
             <div class="col-md-12">
-                @if(!empty($yourBeers))
+                @if(!$yourBeers->isEmpty())
                 <ol class="list-group list-group-numbered mt-4 mb-4">
                @foreach($yourBeers as $beer)
                         <li class="list-group-item d-flex justify-content-between align-items-start">
@@ -36,7 +36,7 @@
                 @endforeach
                 </ol>
                 @else
-                    <p>No record yet</p>
+                    <p>No beers saved here yet, add one from the list of beers</p>
                 @endif
                 <a href="{{ url('beers/1') }}"><button type="button" class="btn btn-warning">Go to Beers</button></a>
             </div>

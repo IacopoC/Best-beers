@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Beer;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 
@@ -17,16 +16,6 @@ class UserController extends Controller
     {
         return view('dashboard' , array('user'=> Auth::user()));
 
-    }
-
-    public function show() {
-        if (Auth::check()) {
-
-            $id = Auth::user()->id;
-            $yourBeers = Beer::where('users_id', $id)->orderBy('created_at', 'desc')->get();
-
-            return view('your-beer', array('yourBeers' => $yourBeers, 'user' => Auth::user()));
-        }
     }
 
     public function update()
