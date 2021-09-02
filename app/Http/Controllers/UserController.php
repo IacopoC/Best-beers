@@ -6,6 +6,7 @@ use App\Models\User;
 
 class UserController extends Controller
 {
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -15,7 +16,6 @@ class UserController extends Controller
     public function index()
     {
         return view('dashboard' , array('user'=> Auth::user()));
-
     }
 
     public function update()

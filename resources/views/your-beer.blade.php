@@ -22,7 +22,7 @@
     <div class="container">
         <div class="row mb-3">
             <div class="col-md-12">
-                @if(!$yourBeers->isEmpty())
+                @if($yourBeers->isNotEmpty())
                 <ol class="list-group list-group-numbered mt-4 mb-4">
                @foreach($yourBeers as $beer)
                         <li class="list-group-item d-flex justify-content-between align-items-start">

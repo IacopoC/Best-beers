@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class BeerscountController extends Controller
 {
+
     public function create(Request $request) {
         $beer_data = new Beer();
 

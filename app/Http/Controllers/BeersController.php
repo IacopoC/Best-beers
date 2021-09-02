@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 class BeersController extends Controller
 {
+
     public function __construct(BaseType $basetype)
     {
         $this->basetype = $basetype;
