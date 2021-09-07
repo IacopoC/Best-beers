@@ -13,9 +13,11 @@ class BeerscountController extends Controller
         $beer_data = new Beer();
 
         $this->validate(request(), [
+            'beers_id' => 'integer',
             'users_id' => 'integer',
         ]);
 
+        $beer_data->beers_id = request('beers_id');
         $beer_data->name = request('name');
         $beer_data->tagline = request('tagline');
         $beer_data->count_drink = request('count_drink');
@@ -32,7 +34,7 @@ class BeerscountController extends Controller
         if (Auth::check()) {
 
             $id = Auth::user()->id;
-            $yourBeers = Beer::where('users_id', $id)->orderBy('created_at', 'desc')->get();
+            $yourBeers = Beer::where('users_id', $id)->orderBy('created_at', 'asc')->get();
 
             return view('your-beer', array('yourBeers' => $yourBeers, 'user' => Auth::user()));
         }

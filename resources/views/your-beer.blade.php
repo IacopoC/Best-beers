@@ -27,7 +27,7 @@
                @foreach($yourBeers as $beer)
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
-                                <div class="fw-bold">{{ $beer->name }}</div>
+                                <div class="fw-bold"><a href="{{'/single-beer/' . $beer->beers_id }}">{{ $beer->name }}</a></div>
                                 <p>{{ $beer->tagline }}</p>
                                 <h4 class="fw-bold @if($beer->count_drink >= 6) {{ 'text-danger' }} @else {{ 'text-warning' }} @endif">{{ $beer->drunk }}</h4>
                             </div>

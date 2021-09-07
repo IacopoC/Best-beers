@@ -45,6 +45,7 @@
                 </button>
                     <form id="savebeer" method="post">
                         {{ csrf_field() }}
+                        <input type="hidden" name="beers_id" id="beer-id" value="{{ $singleBeer['0']->id }}">
                         <input type="hidden" name="name" id="beer-name" value="{{ $singleBeer['0']->name }}">
                         <input type="hidden" name="tagline" id="beer-tagline" value="{{ $singleBeer['0']->tagline }}">
                         <input type="hidden" name="count_drink" id="beer-count" value="0">
