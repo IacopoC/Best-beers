@@ -30,7 +30,7 @@
                         <a class="nav-link text-white" href="{{ route('logout') }}" onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();">
                             {{ __('Logout') }} <img class="play-icon img-fluid p-1" src="{{ asset('img/logout.png') }}" alt="logout icon"></a>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                             @csrf
                         </form>
                     </li>
