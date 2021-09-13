@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="creata migrazione e aggiunto id birre database">
+    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="modifica classe css">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/navigation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BeersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BeersController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +225,10 @@
       <workItem from="1630606031306" duration="1722000" />
       <workItem from="1631038523102" duration="1426000" />
       <workItem from="1631039979403" duration="20000" />
-      <workItem from="1631302761046" duration="879000" />
+      <workItem from="1631302761046" duration="959000" />
+      <workItem from="1631303732141" duration="44000" />
+      <workItem from="1631557467802" duration="82000" />
+      <workItem from="1631557716304" duration="734000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -472,7 +475,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631039565137</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="modifica classe css">
+      <created>1631303708348</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1631303708348</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,7 +501,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modifiche script più risultati birre js" />
     <MESSAGE value="modifiche testi home e pagina archivio" />
     <MESSAGE value="aggiunta prima bozza conteggio birre, modifiche testo" />
     <MESSAGE value="modifiche js elenco birre" />
@@ -516,6 +525,7 @@
     <MESSAGE value="correzione errori metodo empty" />
     <MESSAGE value="modifica titolo" />
     <MESSAGE value="creata migrazione e aggiunto id birre database" />
-    <option name="LAST_COMMIT_MESSAGE" value="creata migrazione e aggiunto id birre database" />
+    <MESSAGE value="modifica classe css" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifica classe css" />
   </component>
 </project>

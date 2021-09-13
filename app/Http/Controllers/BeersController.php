@@ -22,8 +22,16 @@ class BeersController extends Controller
     public function show($id) {
 
         $singleBeer = $this->basetype->getSingleBeer($id);
+        $count_beer = $this->getCountedBeer($id);
 
         return view('single-beer', compact( 'singleBeer'));
+    }
+
+    public function getCountedBeer($id) {
+        $user_id = Auth::user()->id;
+        $counted_beer = Beer::where('beers_id', $id)->where('users_id', $user_id)->get();
+        
+        return $counted_beer;
     }
 
 }
