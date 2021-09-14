@@ -48,11 +48,15 @@
                         <input type="hidden" name="beers_id" id="beer-id" value="{{ $singleBeer['0']->id }}">
                         <input type="hidden" name="name" id="beer-name" value="{{ $singleBeer['0']->name }}">
                         <input type="hidden" name="tagline" id="beer-tagline" value="{{ $singleBeer['0']->tagline }}">
-                        <input type="hidden" name="count_drink" id="beer-count" value="0">
-                        <input type="hidden" name="drunk" id="beer-drunk" value="sober, good Job!">
+                        <input type="hidden" name="count_drink" id="beer-count" value="@if(!$count_beer->isEmpty) {{ $count_beer->count_drink }} @else {{ 0 }} @endif">
+                        <input type="hidden" name="drunk" id="beer-drunk" value="@if(!$count_beer->isEmpty) {{ $count_beer->drunk }} @else {{ 'sober, good Job!' }} @endif">
                         <input type="hidden" name="users_id" id="user-id" value="{{ Auth::user()->id }}">
-                    <p class="beerCounter pt-4 pb-2">Numbers of times you pour this beer: <span id="displayCount">0</span></p>
-                    <p id="displayDrunk" class="sober">sober, good Job!</p>
+                    <p class="beerCounter pt-4 pb-2">Numbers of times you pour this beer: <span id="displayCount">@if(!$count_beer->isEmpty)
+                                {{ $count_beer->count_drink }}
+                            @else {{ 0 }} @endif</span></p>
+                    <p id="displayDrunk" class="sober">@if(!$count_beer->isEmpty)
+                            {{ $count_beer->drunk }}
+                            @else {{ 'sober, good Job!' }} @endif</p>
                     <button type="submit" class="btn btn-warning" id="saveBeer">
                         Save Beer <img class="play-icon img-fluid" src="{{ asset('img/save.png') }}" alt="save icon">
                     </button>
@@ -65,7 +69,7 @@
     </div>
     <script>
 
-        let count = 0;
+        let count = document.getElementById("beer-count").value;
         let pourButton = document.getElementById("pourBeer");
         let displayCount = document.getElementById("displayCount");
         let displayDrunk = document.getElementById("displayDrunk");

@@ -7,6 +7,7 @@
     <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BeersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BeersController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/single-beer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/single-beer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -229,7 +230,9 @@
       <workItem from="1631303732141" duration="44000" />
       <workItem from="1631557467802" duration="82000" />
       <workItem from="1631557716304" duration="891000" />
-      <workItem from="1631558705675" duration="147000" />
+      <workItem from="1631558705675" duration="300000" />
+      <workItem from="1631611637977" duration="1204000" />
+      <workItem from="1631620567676" duration="1787000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -490,7 +493,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631558503155</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="modifiche query birra salvata view">
+      <created>1631558929305</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1631558929305</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -509,7 +519,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="aggiunta prima bozza conteggio birre, modifiche testo" />
     <MESSAGE value="modifiche js elenco birre" />
     <MESSAGE value="modifiche stile pagina login register e auth" />
     <MESSAGE value="modifiche paginazione beers" />
@@ -534,6 +543,7 @@
     <MESSAGE value="creata migrazione e aggiunto id birre database" />
     <MESSAGE value="modifica classe css" />
     <MESSAGE value="prima bozza query birra salvata view" />
-    <option name="LAST_COMMIT_MESSAGE" value="prima bozza query birra salvata view" />
+    <MESSAGE value="modifiche query birra salvata view" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifiche query birra salvata view" />
   </component>
 </project>
