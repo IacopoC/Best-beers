@@ -51,15 +51,15 @@
                         <input type="hidden" name="count_drink" id="beer-count" value="@if($count_beer) {{ $count_beer->count_drink }} @else {{ 0 }} @endif">
                         <input type="hidden" name="drunk" id="beer-drunk" value="@if($count_beer) {{ $count_beer->drunk }} @else {{ 'sober, good Job!' }} @endif">
                         <input type="hidden" name="users_id" id="user-id" value="{{ Auth::user()->id }}">
-                    <p class="beerCounter pt-4 pb-2">Numbers of times you pour this beer: <span id="displayCount">@if($count_beer)
+                        <p class="beerCounter pt-4 pb-2">Numbers of times you pour this beer: <span id="displayCount">@if($count_beer)
                                 {{ $count_beer->count_drink }}
                             @else {{ 0 }} @endif</span></p>
-                    <p id="displayDrunk" class="sober">@if($count_beer)
+                        <p id="displayDrunk" class="sober">@if($count_beer)
                             {{ $count_beer->drunk }}
                             @else {{ 'sober, good Job!' }} @endif</p>
-                    <button type="submit" class="btn btn-warning" id="saveBeer">
-                        Save Beer <img class="play-icon img-fluid" src="{{ asset('img/save.png') }}" alt="save icon">
-                    </button>
+                            <button type="submit" class="btn btn-warning" id="saveBeer">
+                                @if(isset($count_beer)) {{'Update Beer'}} @else {{ 'Save Beer' }} @endif <img class="play-icon img-fluid" src="{{ asset('img/save.png') }}" alt="save icon">
+                            </button>
                     </form>
                     <audio id="pouring-audio" src="{{ asset('audio/beer-pouring.mp3') }}"></audio>
                     <audio id="hiccup-audio" src="{{ asset('audio/hiccup.mp3') }}"></audio>
