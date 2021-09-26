@@ -43,7 +43,10 @@
                 <button type="button" class="btn btn-warning" id="pourBeer">
                     Pour Beer <img class="play-icon img-fluid" src="{{ asset('img/play-icon.png') }}" alt="play icon">
                 </button>
-                    <form id="savebeer" method="post">
+                    <form id="savebeer" method="POST" action="@if(isset($count_beer)){{ url('/' . 'updated-beer/' . $singleBeer['0']->id ) }} @endif">
+                        @if(isset($count_beer))
+                        @method('PATCH')
+                        @endif
                         {{ csrf_field() }}
                         <input type="hidden" name="beers_id" id="beer-id" value="{{ $singleBeer['0']->id }}">
                         <input type="hidden" name="name" id="beer-name" value="{{ $singleBeer['0']->name }}">

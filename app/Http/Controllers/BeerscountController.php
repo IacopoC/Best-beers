@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 class BeerscountController extends Controller
 {
 
-    public function create(Request $request) {
+    public function create() {
         $beer_data = new Beer();
 
         $this->validate(request(), [
@@ -27,6 +27,24 @@ class BeerscountController extends Controller
         $beer_data->save();
 
         return view('saved-beer');
+
+    }
+
+    public function update(Beer $beer ,$beer_id) {
+
+        $beer_id = request('beers_id');
+
+        $beer_data = Beer::find($beer_id);
+
+        $this->validate(request(), [
+            'beers_id' => 'integer',
+            'users_id' => 'integer',
+        ]);
+
+        $beer_data->count_drink = request('count_drink');
+        $beer_data->drunk = request('drunk');
+
+        $beer_data->save();
 
     }
 

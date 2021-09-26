@@ -32,4 +32,6 @@ Route::post('/dashboard', [UserController::class, 'update']);
 
 Route::post('/single-beer/{id}', [BeerscountController::class, 'create']);
 
+Route::patch('updated-beer/{id}', [BeerscountController::class, 'update']);
+
 require __DIR__.'/auth.php';
