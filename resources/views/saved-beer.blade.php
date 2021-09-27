@@ -24,7 +24,8 @@
             <div class="col-md-6">
                 <h2>Your beer has been saved</h2>
                 <p>Go back to see other beers you want to drink/save.</p>
-                <a href="{{ url('beers/1') }}"><button type="button" class="btn btn-warning">Go to Beers</button></a>
+                <a class="d-inline" href="{{ url('beers/1') }}"><button type="button" class="btn btn-warning">Go to Beers</button></a>
+                <a class="d-inline" href="{{ url('your-beer') }}"><button type="button" class="btn btn-warning">Your Beers</button></a>
             </div>
             <div class="col-md-6">
                 <img class="img-fluid" src="{{ asset('img/saved-beers.jpg') }}" alt="beers">

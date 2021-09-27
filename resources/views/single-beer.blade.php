@@ -43,7 +43,7 @@
                 <button type="button" class="btn btn-warning" id="pourBeer">
                     Pour Beer <img class="play-icon img-fluid" src="{{ asset('img/play-icon.png') }}" alt="play icon">
                 </button>
-                    <form id="savebeer" method="POST" action="@if(isset($count_beer)){{ url('/' . 'updated-beer/' . $singleBeer['0']->id ) }} @endif">
+                    <form id="savebeer" method="POST">
                         @if(isset($count_beer))
                         @method('PATCH')
                         @endif

@@ -30,11 +30,12 @@ class BeerscountController extends Controller
 
     }
 
-    public function update(Beer $beer ,$beer_id) {
+    public function update() {
 
+        $id = Auth::user()->id;
         $beer_id = request('beers_id');
 
-        $beer_data = Beer::find($beer_id);
+        $beer_data = Beer::where('beers_id', $beer_id)->where('users_id', $id)->first();
 
         $this->validate(request(), [
             'beers_id' => 'integer',
@@ -46,15 +47,14 @@ class BeerscountController extends Controller
 
         $beer_data->save();
 
+        return view('updated-beer');
     }
 
     public function show() {
-        if (Auth::check()) {
 
             $id = Auth::user()->id;
             $yourBeers = Beer::where('users_id', $id)->orderBy('created_at', 'asc')->get();
 
             return view('your-beer', array('yourBeers' => $yourBeers, 'user' => Auth::user()));
-        }
     }
 }
