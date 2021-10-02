@@ -30,6 +30,7 @@ class BeersController extends Controller
     }
 
     public function getCountedBeer($id) {
+
         $user_id = Auth::user()->id;
         $counted_beer = Beer::where('beers_id', $id)->where('users_id', $user_id)->first();
 

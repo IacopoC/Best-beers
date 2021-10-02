@@ -52,9 +52,20 @@ class BeerscountController extends Controller
 
     public function show() {
 
-            $id = Auth::user()->id;
-            $yourBeers = Beer::where('users_id', $id)->orderBy('created_at', 'asc')->get();
+        $id = Auth::user()->id;
+        $yourBeers = Beer::where('users_id', $id)->orderBy('created_at', 'asc')->get();
 
-            return view('your-beer', array('yourBeers' => $yourBeers, 'user' => Auth::user()));
+        return view('your-beer', array('yourBeers' => $yourBeers, 'user' => Auth::user()));
+    }
+
+    public function delete() {
+
+        $id = Auth::user()->id;
+        $beer_id = request('beer_id');
+
+        $yourBeers = Beer::where('beers_id', $beer_id)->where('users_id', $id)->first();
+        $yourBeers->delete();
+
+        return redirect()->route('your-beer');
     }
 }

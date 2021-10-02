@@ -32,6 +32,12 @@
                                 <h4 class="fw-bold @if($beer->count_drink >= 6) {{ 'text-danger' }} @else {{ 'text-warning' }} @endif">{{ $beer->drunk }}</h4>
                             </div>
                             <span class="badge @if($beer->count_drink >= 6) {{ 'bg-danger' }} @else {{ 'bg-warning' }} @endif rounded-pill">{{ $beer->count_drink }}</span>
+                            <form id="beer-delete" class="d-inline px-3" method="post">
+                                {{ csrf_field() }}
+                                @method('DELETE')
+                                <input type="hidden" name="beer_id" id="beer-id" value="{{ $beer->beers_id }}">
+                                <button type="submit" id="delete-submit" class="btn btn-danger">Delete</button>
+                            </form>
                         </li>
                 @endforeach
                 </ol>
