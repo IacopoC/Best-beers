@@ -12,7 +12,7 @@
                 <div class="col-lg-12">
                     <div class="row">
                         <div class="col-md-7">
-                            <h1 class="display-4 text-white mt-5 mb-2">Benvenuto {{ $user->name }}</h1>
+                            <h1 class="display-4 text-white mt-5 mb-2">Welcome {{ $user->name }}</h1>
                         </div>
                     </div>
                 </div>
@@ -22,10 +22,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p><strong>Dati utente</strong></p>
+                <p><strong>User data</strong></p>
                 <p>Nickname: {{ $user->name }}</p>
                 <p>Email: {{ $user->email }}</p>
-                <p>Iscritto dal: {{ date('d M Y', $user->created_at->timestamp) }}</p>
+                <p>Subscribed: {{ date('d M Y', $user->created_at->timestamp) }}</p>
             </div>
         </div>
     </div>
@@ -34,7 +34,7 @@
             <div class="col-md-12">
 
                 @if(!empty($user->address))
-                    <p class="pt-4"><strong>Indirizzo</strong></p>
+                    <p class="pt-4"><strong>Address</strong></p>
                     <p>{{ $user->address }}
                         @endif
                         @if(!empty($user->zip))
@@ -52,7 +52,7 @@
             </div>
             <div class="col-md-12 pt-4 pb-4">
                 <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Modifica profilo
+                    Update profile
                 </button>
             </div>
         </div>
@@ -63,32 +63,32 @@
         <div class="modal-dialog mw-100 w-75">
             <div class="modal-content">
                 <div class="modal-header card-header-title">
-                    <h4 class="modal-title card-element-title">Aggiungi informazioni profilo</h4>
+                    <h4 class="modal-title card-element-title">Add user informations</h4>
                 </div>
                 <div class="modal-body">
                     <form class="form-horizontal" method="POST">
                         {{ csrf_field() }}
 
                         <div class="form-group pt-4">
-                            <label for="address" class="col-md-4 control-label-p">Indirizzo</label>
+                            <label for="address" class="col-md-4 control-label-p">Address</label>
                             <div class="col-md-9">
                                 <input id="address" type="text" class="form-control" name="address" value="@if(!empty($user->address)){{ $user->address }} @endif">
                             </div>
                         </div>
                         <div class="form-group pt-4">
-                            <label for="zip" class="col-md-6 control-label-p">CAP</label>
+                            <label for="zip" class="col-md-6 control-label-p">ZIP</label>
                             <div class="col-md-9">
                                 <input id="zip" type="text" class="form-control" name="zip" value="@if(!empty($user->zip)){{ $user->zip }} @endif">
                             </div>
                         </div>
                         <div class="form-group pt-4">
-                            <label for="province" class="col-md-6 control-label-p">Provincia</label>
+                            <label for="province" class="col-md-6 control-label-p">Province</label>
                             <div class="col-md-9">
                                 <input id="province" type="text" class="form-control" name="province" value="@if(!empty($user->province)){{ $user->province }} @endif">
                             </div>
                         </div>
                         <div class="form-group pt-4">
-                            <label for="hometown" class="col-md-4 control-label-p">Città</label>
+                            <label for="hometown" class="col-md-4 control-label-p">Town</label>
 
                             <div class="col-md-9">
                                 <div class="input-group">
@@ -98,7 +98,7 @@
                             </div>
                         </div>
                         <div class="form-group pt-4 pb-4">
-                            <label for="country" class="col-md-4 control-label-p">Stato</label>
+                            <label for="country" class="col-md-4 control-label-p">State</label>
 
                             <div class="col-md-9">
                                 <select id="country" class="form-control form-select" aria-label="Default select" name="country">
@@ -114,8 +114,9 @@
                         <div class="form-group">
                             <div class="col-md-9 col-md-offset-2">
                                 <button type="submit" class="btn btn-warning">
-                                    Aggiorna profilo
+                                    Update profile
                                 </button>
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </form>

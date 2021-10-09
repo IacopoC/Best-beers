@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
+    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="delete your beer e rotte">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BeersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BeersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BeerscountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BeerscountController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/your-beer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/your-beer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/single-beer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/single-beer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +238,9 @@
       <workItem from="1632680584916" duration="3513000" />
       <workItem from="1632762187400" duration="1701000" />
       <workItem from="1633109916613" duration="124000" />
-      <workItem from="1633201374718" duration="2915000" />
+      <workItem from="1633201374718" duration="3623000" />
+      <workItem from="1633205081647" duration="42000" />
+      <workItem from="1633804739809" duration="1490000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -542,7 +543,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632763644917</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="delete your beer e rotte">
+      <created>1633204458950</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1633204458950</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -561,7 +569,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modifiche navigazione, aggiunta breadcrumbs" />
     <MESSAGE value="aggiunti assets, modifiche stile login e register" />
     <MESSAGE value="aggiunto js single beers" />
     <MESSAGE value="correzione font" />
@@ -586,6 +593,7 @@
     <MESSAGE value="aggiunta condizione update birre e pagina" />
     <MESSAGE value="aggiunto controller update in corso" />
     <MESSAGE value="update beers e correzione errori" />
-    <option name="LAST_COMMIT_MESSAGE" value="update beers e correzione errori" />
+    <MESSAGE value="delete your beer e rotte" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete your beer e rotte" />
   </component>
 </project>

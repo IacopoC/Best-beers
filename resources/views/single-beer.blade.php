@@ -67,6 +67,11 @@
                     <audio id="pouring-audio" src="{{ asset('audio/beer-pouring.mp3') }}"></audio>
                     <audio id="hiccup-audio" src="{{ asset('audio/hiccup.mp3') }}"></audio>
                     @endauth
+                @guest
+                    <div class="pt-3">
+                        <p><strong><a class="text-danger" href="{{ url('/register') }}">Register</a> or <a class="text-danger" href="{{ url('/login') }}">login</a> to rate and save beers</strong></p>
+                    </div>
+                @endguest
             </div>
         </div>
     </div>
