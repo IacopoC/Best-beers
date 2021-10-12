@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="delete your beer e rotte">
+    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="Correzione errori, modifica testi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BeersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BeersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/single-beer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/single-beer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/PagesTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +238,8 @@
       <workItem from="1633109916613" duration="124000" />
       <workItem from="1633201374718" duration="3623000" />
       <workItem from="1633205081647" duration="42000" />
-      <workItem from="1633804739809" duration="1490000" />
+      <workItem from="1633804739809" duration="3128000" />
+      <workItem from="1634063991880" duration="829000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -550,7 +549,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633204458950</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Correzione errori, modifica testi">
+      <created>1633806332876</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1633806332876</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -569,7 +575,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="aggiunti assets, modifiche stile login e register" />
     <MESSAGE value="aggiunto js single beers" />
     <MESSAGE value="correzione font" />
     <MESSAGE value="creata tabella database beers" />
@@ -594,6 +599,7 @@
     <MESSAGE value="aggiunto controller update in corso" />
     <MESSAGE value="update beers e correzione errori" />
     <MESSAGE value="delete your beer e rotte" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete your beer e rotte" />
+    <MESSAGE value="Correzione errori, modifica testi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correzione errori, modifica testi" />
   </component>
 </project>
