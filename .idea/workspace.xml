@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="Correzione errori, modifica testi">
+    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="Aggiunti test pagine">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/PagesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +240,7 @@
       <workItem from="1633201374718" duration="3623000" />
       <workItem from="1633205081647" duration="42000" />
       <workItem from="1633804739809" duration="3128000" />
-      <workItem from="1634063991880" duration="829000" />
+      <workItem from="1634063991880" duration="1810000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -556,7 +557,14 @@
       <option name="project" value="LOCAL" />
       <updated>1633806332876</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Aggiunti test pagine">
+      <created>1634065106402</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1634065106402</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -575,7 +583,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="aggiunto js single beers" />
     <MESSAGE value="correzione font" />
     <MESSAGE value="creata tabella database beers" />
     <MESSAGE value="modifica js, aggiunto file audio hiccup" />
@@ -600,6 +607,7 @@
     <MESSAGE value="update beers e correzione errori" />
     <MESSAGE value="delete your beer e rotte" />
     <MESSAGE value="Correzione errori, modifica testi" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correzione errori, modifica testi" />
+    <MESSAGE value="Aggiunti test pagine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiunti test pagine" />
   </component>
 </project>
