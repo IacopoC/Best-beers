@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="Aggiunti test pagine">
+    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="Modifiche stile login e register">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify-email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify-email.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +239,10 @@
       <workItem from="1633201374718" duration="3623000" />
       <workItem from="1633205081647" duration="42000" />
       <workItem from="1633804739809" duration="3128000" />
-      <workItem from="1634063991880" duration="1810000" />
+      <workItem from="1634063991880" duration="2189000" />
+      <workItem from="1634216243768" duration="1761000" />
+      <workItem from="1634218599911" duration="331000" />
+      <workItem from="1634284778313" duration="181000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -564,7 +566,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634065106402</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="Modifiche stile login e register">
+      <created>1634065871512</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1634065871512</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -583,7 +592,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="correzione font" />
     <MESSAGE value="creata tabella database beers" />
     <MESSAGE value="modifica js, aggiunto file audio hiccup" />
     <MESSAGE value="modifica navigazione link attivi" />
@@ -608,6 +616,7 @@
     <MESSAGE value="delete your beer e rotte" />
     <MESSAGE value="Correzione errori, modifica testi" />
     <MESSAGE value="Aggiunti test pagine" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiunti test pagine" />
+    <MESSAGE value="Modifiche stile login e register" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifiche stile login e register" />
   </component>
 </project>
