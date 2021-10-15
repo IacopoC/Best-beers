@@ -28,7 +28,7 @@
                             @csrf
 
                             <div class="form-group row pb-2">
-                                <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Nome') }}</label>
+                                <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
@@ -70,7 +70,7 @@
                             </div>
 
                             <div class="form-group row pb-2">
-                                <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Conferma Password') }}</label>
+                                <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
 
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
@@ -80,7 +80,7 @@
                             <div class="form-group row mb-0">
                                 <div class="col-md-6 offset-md-4">
                                     <button type="submit" class="btn btn-warning">
-                                        {{ __('Registrati') }}
+                                        {{ __('Register') }}
                                     </button>
                                 </div>
                             </div>

@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/verify-email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify-email.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +242,7 @@
       <workItem from="1634063991880" duration="2189000" />
       <workItem from="1634216243768" duration="1761000" />
       <workItem from="1634218599911" duration="331000" />
-      <workItem from="1634284778313" duration="1738000" />
+      <workItem from="1634284778313" duration="2197000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -582,7 +580,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634284994415</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="Impostazione verifica email">
+      <created>1634286576493</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1634286576493</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -601,7 +606,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modifica js, aggiunto file audio hiccup" />
     <MESSAGE value="modifica navigazione link attivi" />
     <MESSAGE value="aggiunto modello beer, modifica js single beer" />
     <MESSAGE value="aggiunta icona logout" />
@@ -626,6 +630,7 @@
     <MESSAGE value="Aggiunti test pagine" />
     <MESSAGE value="Modifiche stile login e register" />
     <MESSAGE value="Modifica vista verify email" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifica vista verify email" />
+    <MESSAGE value="Impostazione verifica email" />
+    <option name="LAST_COMMIT_MESSAGE" value="Impostazione verifica email" />
   </component>
 </project>
