@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="Modifiche stile login e register">
+    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/verify-email.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/verify-email.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +244,7 @@
       <workItem from="1634063991880" duration="2189000" />
       <workItem from="1634216243768" duration="1761000" />
       <workItem from="1634218599911" duration="331000" />
-      <workItem from="1634284778313" duration="181000" />
+      <workItem from="1634284778313" duration="1738000" />
     </task>
     <task id="LOCAL-00001" summary="primo commit">
       <created>1617129845548</created>
@@ -573,7 +575,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634065871512</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Modifica vista verify email">
+      <created>1634284994415</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1634284994415</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -592,7 +601,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="creata tabella database beers" />
     <MESSAGE value="modifica js, aggiunto file audio hiccup" />
     <MESSAGE value="modifica navigazione link attivi" />
     <MESSAGE value="aggiunto modello beer, modifica js single beer" />
@@ -617,6 +625,7 @@
     <MESSAGE value="Correzione errori, modifica testi" />
     <MESSAGE value="Aggiunti test pagine" />
     <MESSAGE value="Modifiche stile login e register" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modifiche stile login e register" />
+    <MESSAGE value="Modifica vista verify email" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modifica vista verify email" />
   </component>
 </project>
