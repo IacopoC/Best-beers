@@ -32,12 +32,31 @@
                                 <h4 class="fw-bold @if($beer->count_drink >= 6) {{ 'text-danger' }} @else {{ 'text-warning' }} @endif">{{ $beer->drunk }}</h4>
                             </div>
                             <span class="badge @if($beer->count_drink >= 6) {{ 'bg-danger' }} @else {{ 'bg-warning' }} @endif rounded-pill">{{ $beer->count_drink }}</span>
-                            <form id="beer-delete" class="d-inline px-3" method="post">
-                                {{ csrf_field() }}
-                                @method('DELETE')
-                                <input type="hidden" name="beer_id" id="beer-id" value="{{ $beer->beers_id }}">
-                                <button type="submit" id="delete-submit" class="btn btn-danger">Delete</button>
-                            </form>
+                            <button type="button" class="btn btn-danger mx-3" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                                Delete
+                            </button>
+                            <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="deleteModalLabel">Delete beer</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            Click on delete button to cancel the record permanently
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <form id="beer-delete" class="d-inline px-3" method="post">
+                                                {{ csrf_field() }}
+                                                @method('DELETE')
+                                                <input type="hidden" name="beer_id" id="beer-id" value="{{ $beer->beers_id }}">
+                                                <button type="submit" id="delete-submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                 @endforeach
                 </ol>
