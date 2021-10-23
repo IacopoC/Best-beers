@@ -24,7 +24,9 @@
             <div class="col-md-12">
                 @if($yourBeers->isNotEmpty())
                 <ol class="list-group list-group-numbered mt-4 mb-4">
+                   <?php $counter = 0; ?>
                @foreach($yourBeers as $beer)
+                          <?php $counter++ ?>
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
                                 <div class="fw-bold"><a href="{{'/single-beer/' . $beer->beers_id }}">{{ $beer->name }}</a></div>
@@ -32,10 +34,10 @@
                                 <h4 class="fw-bold @if($beer->count_drink >= 6) {{ 'text-danger' }} @else {{ 'text-warning' }} @endif">{{ $beer->drunk }}</h4>
                             </div>
                             <span class="badge @if($beer->count_drink >= 6) {{ 'bg-danger' }} @else {{ 'bg-warning' }} @endif rounded-pill">{{ $beer->count_drink }}</span>
-                            <button type="button" class="btn btn-danger mx-3" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                            <button type="button" class="btn btn-danger mx-3" data-bs-toggle="modal" data-bs-target="#deleteModal{{ $counter }}">
                                 Delete
                             </button>
-                            <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                            <div class="modal fade" id="deleteModal{{ $counter }}" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -60,6 +62,7 @@
                         </li>
                 @endforeach
                 </ol>
+                    <p class="float-md-end">Total beers drink: <span class="mx-2 badge bg-dark rounded-pill">{{ $sumDrinkBeers }}</span></p>
                 @else
                     <p>No beers saved here yet, add one from the list of beers</p>
                 @endif

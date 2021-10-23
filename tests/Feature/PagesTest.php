@@ -12,6 +12,14 @@ class PagesTest extends TestCase
      *
      * @return void
      */
+
+    public function testHomePage()
+    {
+        $response = $this->get('/');
+
+        $response->assertStatus(200);
+    }
+
     public function testBeerPage()
     {
         $response = $this->get('/beers/1');

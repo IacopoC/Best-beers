@@ -54,8 +54,9 @@ class BeerscountController extends Controller
 
         $id = Auth::user()->id;
         $yourBeers = Beer::where('users_id', $id)->orderBy('created_at', 'asc')->get();
+        $sumDrinkBeers = Beer::where('users_id', $id)->sum('count_drink');
 
-        return view('your-beer', array('yourBeers' => $yourBeers, 'user' => Auth::user()));
+        return view('your-beer', array('yourBeers' => $yourBeers, 'sumDrinkBeers' => $sumDrinkBeers, 'user' => Auth::user()));
     }
 
     public function delete() {
