@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="aggiunto modal delete beer">
+    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BeerscountController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BeerscountController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/your-beer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/your-beer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/AuthenticationTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/EmailVerificationTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/PagesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/PagesTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/PasswordConfirmationTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/PasswordResetTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/RegistrationTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/beers.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/beers.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -251,14 +244,8 @@
       <workItem from="1634218599911" duration="331000" />
       <workItem from="1634284778313" duration="3256000" />
       <workItem from="1634667345986" duration="2132000" />
-      <workItem from="1635017517519" duration="2187000" />
-    </task>
-    <task id="LOCAL-00003" summary="aggiunta vista base birre, modifiche rotte">
-      <created>1617219041749</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1617219041749</updated>
+      <workItem from="1635017517519" duration="2824000" />
+      <workItem from="1636449970568" duration="610000" />
     </task>
     <task id="LOCAL-00004" summary="modifiche vista base birre, aggiunta logica birre singole">
       <created>1618080952162</created>
@@ -596,7 +583,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634668641854</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="cancellazione test, aggiunto contatore drink beers, correzione errori">
+      <created>1635019873167</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1635019873167</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -615,7 +609,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="aggiunta icona logout" />
     <MESSAGE value="salvataggio birre, aggiunta immagine e rotta" />
     <MESSAGE value="modifica menu, modifica bottone beers" />
     <MESSAGE value="aggiunta pagina your beers, aggiunto metodo, stile" />
@@ -640,6 +633,7 @@
     <MESSAGE value="Impostazione verifica email" />
     <MESSAGE value="modifica testi register" />
     <MESSAGE value="aggiunto modal delete beer" />
-    <option name="LAST_COMMIT_MESSAGE" value="aggiunto modal delete beer" />
+    <MESSAGE value="cancellazione test, aggiunto contatore drink beers, correzione errori" />
+    <option name="LAST_COMMIT_MESSAGE" value="cancellazione test, aggiunto contatore drink beers, correzione errori" />
   </component>
 </project>
