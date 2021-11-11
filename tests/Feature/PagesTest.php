@@ -16,14 +16,14 @@ class PagesTest extends TestCase
     public function testHomePage()
     {
         $response = $this->get('/');
-
+        $response->assertSee('Home');
         $response->assertStatus(200);
     }
 
     public function testBeerPage()
     {
         $response = $this->get('/beers/1');
-
+        $response->assertSee('Beers');
         $response->assertStatus(200);
     }
 
@@ -31,6 +31,20 @@ class PagesTest extends TestCase
     {
         $response = $this->get('/single-beer/1');
 
+        $response->assertStatus(200);
+    }
+
+    public function testLoginPage()
+    {
+        $response = $this->get('/login');
+        $response->assertSee('Login');
+        $response->assertStatus(200);
+    }
+
+    public function testRegisterPage()
+    {
+        $response = $this->get('/register');
+        $response->assertSee('Register');
         $response->assertStatus(200);
     }
 }
