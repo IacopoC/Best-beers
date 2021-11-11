@@ -1,3 +1,12 @@
+/*************/
+/* Custom stylesheet
+/*************/
+
+h1,h2,h3,h4,h5,h6,p,
+a,label,button,input,
+div,span {
+    font-family: 'Hachi Maru Pop', cursive !important;
+}
 
 .mt-150 {
     margin-top: 150px;
