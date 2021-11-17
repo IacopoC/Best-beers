@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="nuovo google font">
+    <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Feature/PagesTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/PagesTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -246,14 +246,8 @@
       <workItem from="1634667345986" duration="2132000" />
       <workItem from="1635017517519" duration="2824000" />
       <workItem from="1636449970568" duration="816000" />
-      <workItem from="1636650453061" duration="1329000" />
-    </task>
-    <task id="LOCAL-00006" summary="aggiunto effetto audio vista singole birre">
-      <created>1619896880196</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1619896880196</updated>
+      <workItem from="1636650453061" duration="1763000" />
+      <workItem from="1637176576586" duration="700000" />
     </task>
     <task id="LOCAL-00007" summary="aggiunti dati user in dashboard">
       <created>1619898331208</created>
@@ -591,7 +585,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636651158707</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="aggiunti test pagine">
+      <created>1636651844831</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1636651844831</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -610,7 +611,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="aggiunta pagina your beers, aggiunto metodo, stile" />
     <MESSAGE value="aggiunta condizione lista vuota beers" />
     <MESSAGE value="modifica controller conto birre, correzione errori" />
     <MESSAGE value="correzione errori metodo empty" />
@@ -635,6 +635,7 @@
     <MESSAGE value="cancellazione test, aggiunto contatore drink beers, correzione errori" />
     <MESSAGE value="modifica link" />
     <MESSAGE value="nuovo google font" />
-    <option name="LAST_COMMIT_MESSAGE" value="nuovo google font" />
+    <MESSAGE value="aggiunti test pagine" />
+    <option name="LAST_COMMIT_MESSAGE" value="aggiunti test pagine" />
   </component>
 </project>
