@@ -69,7 +69,7 @@
                     @endauth
                 @guest
                     <div class="pt-3">
-                        <p><strong><a class="text-danger" href="{{ url('/register') }}">Register</a> or <a class="text-danger" href="{{ url('/login') }}">login</a> to rate and save beers</strong></p>
+                        <p><strong><a class="text-danger" href="{{ url('/register') }}">Register</a> or <a class="text-danger" href="{{ url('/login') }}">login</a> to drink and save beers</strong></p>
                     </div>
                 @endguest
             </div>
