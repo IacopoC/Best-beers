@@ -1,7 +1,7 @@
-##Best Beers
+## Best Beers
 Un semplice sito web realizzato utilizzando il framework php <a href="https://laravel.com/">Laravel</a>.
 
-###Funzioni presenti: 
+### Funzioni presenti: 
 * elenco birre da <a href="https://punkapi.com/">Punk Api</a> 
 * registrazione utenti 
 * login utenti
