@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f21227c-ee16-4e7f-bd60-6e9163154dbf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/beer-count.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/single-beer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/single-beer.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -248,14 +249,7 @@
       <workItem from="1635017517519" duration="2824000" />
       <workItem from="1636449970568" duration="816000" />
       <workItem from="1636650453061" duration="1763000" />
-      <workItem from="1637176576586" duration="1388000" />
-    </task>
-    <task id="LOCAL-00008" summary="aggiornamento versione bootstrap, modifica colore menu">
-      <created>1620498455598</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1620498455598</updated>
+      <workItem from="1637176576586" duration="1922000" />
     </task>
     <task id="LOCAL-00009" summary="aggiunti parametri birre per pagina, modifiche menu">
       <created>1620501063140</created>
@@ -593,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637177329369</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="modifica testo home e pagina single beer">
+      <created>1637178205544</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1637178205544</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -612,7 +613,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="modifica controller conto birre, correzione errori" />
     <MESSAGE value="correzione errori metodo empty" />
     <MESSAGE value="modifica titolo" />
     <MESSAGE value="creata migrazione e aggiunto id birre database" />
@@ -637,6 +637,7 @@
     <MESSAGE value="nuovo google font" />
     <MESSAGE value="aggiunti test pagine" />
     <MESSAGE value="modifica readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifica readme" />
+    <MESSAGE value="modifica testo home e pagina single beer" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifica testo home e pagina single beer" />
   </component>
 </project>
