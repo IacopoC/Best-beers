@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
+use App\Models\Beer;
 
 class UserController extends Controller
 {
@@ -43,6 +44,19 @@ class UserController extends Controller
         $user->save();
 
         return redirect()->route('dashboard');
+
+    }
+
+    public function delete() {
+        if (Auth::check())  {
+            $id = Auth::user()->id;
+        }
+
+        Beer::where('users_id','=',$id)->delete();
+        User::where('id',"=",$id)->delete();
+
+        Auth::logout();
+        return view('delete-user');
 
     }
 }

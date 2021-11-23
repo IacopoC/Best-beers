@@ -54,10 +54,34 @@
                 <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Update profile
                 </button>
+                <div class="pt-4 pb-4">
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
+                        Delete Profile
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Delete profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Delete all user data. The action is permanent.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <form id="userdelete-form" method="POST" action="{{ url('/delete-user') }}">
+                        {{ csrf_field() }}
+                        <button type="submit" class="btn btn-danger">Delete Profile</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal user -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog mw-100 w-75">
