@@ -11,7 +11,7 @@
                     <div class="row">
                         <div class="col-md-7">
                             <h1 class="display-4 text-white mt-5 mb-2">User deleted</h1>
-                            <p class="text-white">Goodbye</p>
+                            <p class="text-white">Goodbye!</p>
                         </div>
                     </div>
                 </div>
@@ -19,20 +19,16 @@
         </div>
     </header>
         <div class="container">
-            <div class="margin-up">
-                <h4 class="text-uppercase"></h4>
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <div class="panel panel-default">
                             <div class="panel-heading"></div>
-
-                            <div class="panel-body">
-                                <h3>Your user has been eliminated</h3>
-                                <a href="{{ url('/') }}"><button type="button" class="btn btn-warning">Home</button></a>
+                            <div class="panel-body mb-150 mt-150">
+                                <h3>Your user has been eliminated. Thank you.</h3>
+                                <a href="{{ url('/') }}"><button type="button" class="btn btn-warning">Go back Home</button></a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </div>
 @endsection
