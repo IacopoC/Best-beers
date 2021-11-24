@@ -47,7 +47,8 @@ class UserController extends Controller
 
     }
 
-    public function delete() {
+    public function delete()
+    {
         if (Auth::check())  {
             $id = Auth::user()->id;
         }

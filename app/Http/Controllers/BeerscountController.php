@@ -9,7 +9,8 @@ use Illuminate\Support\Facades\Auth;
 class BeerscountController extends Controller
 {
 
-    public function create() {
+    public function create()
+    {
         $beer_data = new Beer();
 
         $this->validate(request(), [
@@ -30,7 +31,8 @@ class BeerscountController extends Controller
 
     }
 
-    public function update() {
+    public function update()
+    {
 
         $id = Auth::user()->id;
         $beer_id = request('beers_id');
@@ -50,7 +52,8 @@ class BeerscountController extends Controller
         return view('updated-beer');
     }
 
-    public function show() {
+    public function show()
+    {
 
         $id = Auth::user()->id;
         $yourBeers = Beer::where('users_id', $id)->orderBy('created_at', 'asc')->get();
@@ -59,7 +62,8 @@ class BeerscountController extends Controller
         return view('your-beer', array('yourBeers' => $yourBeers, 'sumDrinkBeers' => $sumDrinkBeers, 'user' => Auth::user()));
     }
 
-    public function delete() {
+    public function delete()
+    {
 
         $id = Auth::user()->id;
         $beer_id = request('beer_id');

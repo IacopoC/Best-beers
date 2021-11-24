@@ -14,14 +14,16 @@ class BeersController extends Controller
         $this->basetype = $basetype;
     }
 
-    public function index($page) {
+    public function index($page)
+    {
 
         $allBeers = $this->basetype->getDefaultBeers($page);
 
         return view('beers', compact( 'allBeers'));
     }
 
-    public function show($id) {
+    public function show($id)
+    {
 
         $singleBeer = $this->basetype->getSingleBeer($id);
         $count_beer = $this->getCountedBeer($id);
@@ -29,7 +31,8 @@ class BeersController extends Controller
         return view('single-beer', compact( 'singleBeer','count_beer'));
     }
 
-    public function getCountedBeer($id) {
+    public function getCountedBeer($id)
+    {
 
         if (Auth::check()) {
             $user_id = Auth::user()->id;
