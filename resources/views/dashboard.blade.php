@@ -74,8 +74,9 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <form id="userdelete-form" method="POST" action="{{ url('/delete-user') }}">
+                    <form id="userdelete-form" method="post">
                         {{ csrf_field() }}
+                         @method('DELETE')
                         <button type="submit" class="btn btn-danger">Delete Profile</button>
                     </form>
                 </div>

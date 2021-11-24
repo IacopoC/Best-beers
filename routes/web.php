@@ -28,7 +28,7 @@ Route::get('/single-beer/{id}', [BeersController::class, 'show']);
 
 Route::get('/dashboard', [UserController::class, 'index'])->middleware(['auth','verified'])->name('dashboard');
 
-Route::post('/delete-user', [UserController::class, 'delete']);
+Route::delete('/dashboard', [UserController::class, 'delete']);
 
 Route::get('/your-beer', [BeerscountController::class, 'show'])->middleware(['auth'])->name('your-beer');
 
