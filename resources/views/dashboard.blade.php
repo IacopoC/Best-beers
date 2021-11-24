@@ -51,7 +51,7 @@
                     </p>
             </div>
             <div class="col-md-12 pt-4 pb-4">
-                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#updateModal">
                     Update profile
                 </button>
                 <div class="pt-4 pb-4">
@@ -62,15 +62,16 @@
             </div>
         </div>
     </div>
+    <!-- Modal delete user -->
     <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Delete profile</h5>
+                    <h5 class="modal-title" id="deleteModalLabel">Delete profile</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Delete all user data. The action is permanent.
+                    Delete all user data.<br> This action is permanent.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -84,7 +85,7 @@
         </div>
     </div>
     <!-- Modal user -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
         <div class="modal-dialog mw-100 w-75">
             <div class="modal-content">
                 <div class="modal-header card-header-title">
