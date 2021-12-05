@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Beer;
 use Illuminate\Support\Facades\Auth;
 
@@ -56,7 +55,7 @@ class BeerscountController extends Controller
     {
 
         $id = Auth::user()->id;
-        $yourBeers = Beer::where('users_id', $id)->orderBy('created_at', 'asc')->get();
+        $yourBeers = Beer::where('users_id', $id)->orderBy('created_at', 'asc')->simplePaginate(10);
         $sumDrinkBeers = Beer::where('users_id', $id)->sum('count_drink');
 
         return view('your-beer', array('yourBeers' => $yourBeers, 'sumDrinkBeers' => $sumDrinkBeers, 'user' => Auth::user()));
