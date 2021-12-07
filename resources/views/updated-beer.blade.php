@@ -28,7 +28,7 @@
                 <a class="d-inline" href="{{ url('your-beer') }}"><button type="button" class="btn btn-warning">Your Beers</button></a>
             </div>
             <div class="col-md-6">
-                <img class="img-fluid" src="{{ asset('img/saved-beers.jpg') }}" alt="beers">
+                <img class="img-fluid" src="{{ asset('img/update-beer.jpg') }}" alt="beers">
             </div>
         </div>
     </div>
