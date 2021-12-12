@@ -4,4 +4,4 @@ function emptyField() {
     if (field === "") {
         document.getElementById("alert-message").innerHTML = "Fill the field to make a search";
         return false;
-    }};
+    }}
