@@ -48,6 +48,7 @@
             <div class="col-md-7">
                 <h3 class="pt-4">History of Brewdog</h3>
                 <p class="pt-4">BrewDog is a multinational brewery and pub chain based in Ellon, Scotland. It was founded in 2007 by James Watt and Martin Dickie. Together they own 46% of the company.</p>
+                <a href="https://en.wikipedia.org/wiki/BrewDog">Learn more in Wiki</a>
             </div>
         </div>
         <div class="divider"></div>
