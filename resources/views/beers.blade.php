@@ -21,6 +21,9 @@
         </div>
     </header>
     <div class="container">
+        <div class="row">
+            @include('layouts/search-bar')
+        </div>
         <div class="row mb-3">
             @if(!empty($allBeers))
                 @foreach( $allBeers as $allBeer)
