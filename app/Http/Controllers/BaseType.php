@@ -35,4 +35,9 @@ class BaseType extends Controller
         return $this->buildSingleCall('beers/' . $id);
     }
 
+    public function getSearchedBeer($query)
+    {
+        return $this->buildSingleCall('beers?beer_name=' . $query);
+    }
+
 }
