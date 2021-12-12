@@ -26,6 +26,8 @@ Route::get('/beers/{page}', [BeersController::class, 'index']);
 
 Route::get('/single-beer/{id}', [BeersController::class, 'show']);
 
+Route::get('/search', [BeersController::class, 'search']);
+
 Route::get('/dashboard', [UserController::class, 'index'])->middleware(['auth','verified'])->name('dashboard');
 
 Route::delete('/dashboard', [UserController::class, 'delete']);
