@@ -32,7 +32,7 @@
                             <h4>{{ $allBeer->name }}</h4>
                             <a class="text-dark text-decoration-none" href="{{ url('single-beer/' . $allBeer->id) }}">
                                 <div class="p-3">
-                                    <img class="img-fluid beer-image h-160" src="{{$allBeer->image_url}}" alt="{{ $allBeer->name }}">
+                                    <img class="img-fluid beer-image h-160" src="{{ $allBeer->image_url }}" alt="{{ $allBeer->name }}">
                                 </div>
 
                             <p class="fw-bold">{{ $allBeer->tagline }}</p>
