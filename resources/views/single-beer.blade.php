@@ -25,6 +25,8 @@
             <div class="col-md-6">
             @if(!is_null($singleBeer['0']->image_url))
             <img src="{{ $singleBeer['0']->image_url }}" alt="{{ $singleBeer['0']->name }}">
+            @else
+            <img src="{{ asset('/img/beer-no-image.jpg') }}" alt="{{ $singleBeer['0']->name }}">
              @endif
             </div>
             <div class="col-md-6">

@@ -32,7 +32,11 @@
                             <h4>{{ $beerResult->name }}</h4>
                             <a class="text-dark text-decoration-none" href="{{ url('single-beer/' . $beerResult->id) }}">
                                 <div class="p-3">
-                                    <img class="img-fluid beer-image h-160" src="{{$beerResult->image_url}}" alt="{{ $beerResult->name }}">
+                                    @if(!is_null($beerResult->image_url))
+                                    <img class="img-fluid beer-image h-160" src="{{ $beerResult->image_url }}" alt="{{ $beerResult->name }}">
+                                    @else
+                                    <img class="img-fluid beer-image h-160" src="{{ asset('/img/beer-no-image.jpg') }}" alt="{{ $beerResult->name }}">
+                                    @endif
                                 </div>
 
                                 <p class="fw-bold">{{ $beerResult->tagline }}</p>
