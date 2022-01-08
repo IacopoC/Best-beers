@@ -22,12 +22,12 @@
     <div class="container">
         <div class="row mb-3 mt-3">
             <div class="col-md-7">
-                <h3 class="pt-4">Welcome to Best Beers: archive of the brewdog beers</h3>
+                <h3 class="pt-4">Welcome to Best Beers, archive of the brewdog beers</h3>
                 <p class="pt-4">Functionality of Best Beers Website</p>
                <ul class="pt-2">
+                   <li>Register user</li>
                    <li>Login user</li>
                    <li>See all the beer in Brewdog catalogue</li>
-                   <li>Register user</li>
                    <li>Drink and save beers</li>
                </ul>
                 @guest
