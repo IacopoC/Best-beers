@@ -50,11 +50,15 @@
                             @endif
                     </p>
             </div>
-            <div class="col-md-12 pt-4 pb-4">
+            <div class="col-md-6">
+                <div class="pt-4 pb-4">
                 <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#updateModal">
                     Update profile
                 </button>
-                <div class="pt-4 pb-4">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="pt-4 pb-4 text-end">
                     <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteModal">
                         Delete Profile
                     </button>
