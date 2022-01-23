@@ -34,6 +34,7 @@
                             @csrf
                         </form>
                     </li>
+                    <li class="text-white px-3">Total drink: <span class="mx-2 badge bg-dark rounded-pill">{{ beersCount() }}</span></li>
                 @endguest
             </ul>
         </div>

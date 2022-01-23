@@ -65,7 +65,7 @@
                 <div class="mt-4 mb-4">
                     {{ $yourBeers->links() }}
                 </div>
-                    <p class="float-md-end">Total beers drink: <span class="mx-2 badge bg-dark rounded-pill">{{ $sumDrinkBeers }}</span></p>
+                    <p class="float-md-end">Total beers drink: <span class="mx-2 badge bg-dark rounded-pill">{{ beersCount() }}</span></p>
                 @else
                     <p>No beers saved here yet, add one from the list of beers</p>
                 @endif
