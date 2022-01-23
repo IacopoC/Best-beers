@@ -83,7 +83,7 @@
                             </div>
                         </form>
                         <p>User: demo@demo.it</p>
-                        <p>Pass: ciaociao1</p>
+                        <p>Pass: demodemo</p>
                     </div>
                 </div>
             </div>
